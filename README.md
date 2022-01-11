@@ -20,12 +20,12 @@ pip install webdriver-manager
 
 pip install -U selenium
 
-cd /home/YOURUSERNAME
+cd /home/YOURUSERNAME # change username
 
 git clone https://github.com/eu-de-olibo/spiegel-magazine-downloader
 
 cd spiegel-magazine-downloader
 
-vi get-all-spiegel-magazines.py # Change username and password
+vi get-all-spiegel-magazines.py # change username and password
 
 python3 get-all-spiegel-magazines.py
