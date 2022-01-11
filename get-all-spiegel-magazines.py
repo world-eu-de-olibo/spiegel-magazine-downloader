@@ -1,3 +1,5 @@
+# Note: The downloader works only if you have a valid subscription from www.spiegel.de
+    
 import time
 import datetime
 from selenium import webdriver
@@ -25,10 +27,12 @@ year = 1947
 week = 1
 lweek = 52
 now = datetime.datetime.now()
+
 driver.get("https://gruppenkonto.spiegel.de/download/download.html?heft=SP%2F"+str(year)+"%2F"+str(week)+"")
 driver.find_element(By.ID, "loginname").send_keys("YOUREMAILADDRESS")
 driver.find_element(By.ID, "password").send_keys("YOURPASSWORD")
 driver.find_element(By.ID, "submit").click()
+
 week = week + 1
 
 while (year <= now.year):
@@ -41,4 +45,5 @@ while (year <= now.year):
         week = week + 1
     week = 1
     year = year + 1
+    
 driver.quit()
