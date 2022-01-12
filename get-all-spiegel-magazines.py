@@ -45,5 +45,6 @@ while (year <= now.year):
         week = week + 1
     week = 1
     year = year + 1
+    time.sleep(60)
     
 driver.quit()
