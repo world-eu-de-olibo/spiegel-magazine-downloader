@@ -25,7 +25,7 @@ driver = webdriver.Chrome(options=chrome_options, service=ser)
 
 year = 1947
 week = 1
-lweek = 52
+lweek = 53
 now = datetime.datetime.now()
 
 driver.get("https://gruppenkonto.spiegel.de/download/download.html?heft=SP%2F"+str(year)+"%2F"+str(week)+"")
